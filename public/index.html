@@ -240,7 +240,7 @@ function loadMile1() {
     </tr>
   `;
 
-  fetch('fetch('/api/getAllData?type=mile1')')
+  fetch('/api/getAllData?type=mile1')
     .then(res => res.json())
     .then(result => {
       fullData = result.data || [];
