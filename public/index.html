@@ -261,7 +261,7 @@ function renderMile1(data) {
         <td>${item.date}</td>
         <td>${item.time}</td>
         <td>
-          ${item.otp_validation === "OTP Verified"
+          ${(item.otp_validation || item.otp_status) === "OTP Verified"
             ? '<span class="badge-success">Verified</span>'
             : '<span class="badge-pending">Pending</span>'}
         </td>
